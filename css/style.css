@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Epidemia";
+  src: url(../assets/fonts/epidemia-font/EpidemiaTrial-XWyP.otf);
+}
+@font-face {
+  font-family: "sprayed";
+  src: url(../assets/fonts/uniquely-sprayed-font/UniquelySprayed-PXOx.ttf);
+}
+:root {
+  --ff-counter: "Epidemia";
+  --ff-text: "Sprayed";
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 100px;
+}
+
+#count {
+  height: 25rem;
+  font-family: var(--ff-counter);
+  font-size: 25rem;
+}
+
+.button {
+  cursor: pointer;
+
+  height: 80px;
+  padding: 0 50px;
+
+  border: 0;
+  background: none;
+  color: black;
+
+  font-family: var(--ff-text);
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.button:hover {
+  color: red;
+}
+
+/* Footer */
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0 auto;
+
+  background-color: #ccc;
+  padding: 10px 0px;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: gray;
+}
+
+.github p,
+img {
+  padding: 2px 15px;
+}
