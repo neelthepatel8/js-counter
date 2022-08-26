@@ -10,6 +10,13 @@ const counter = (() => {
   plus.addEventListener("click", increaseCounter);
   reset.addEventListener("click", resetCounter);
 
+  window.addEventListener("keypress", checkKey);
+
+  function checkKey(e){
+    if (e.key == '=') increaseCounter();
+    if (e.key === "-") decreaseCounter();
+  }
+
   function decreaseCounter() {
     count--;
     counter.textContent = count;
