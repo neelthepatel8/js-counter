@@ -19,11 +19,14 @@ const counter = (() => {
 
   function decreaseCounter() {
     count--;
-    counter.textContent = count;
+    if (count > -1000000) counter.textContent = count;
+    else alert("Minimum count is 1000000")
   }
   function increaseCounter() {
     count++;
-    counter.textContent = count;
+    if (count < 1000000) counter.textContent = count;
+    else alert("Maximum count is 1000000")
+
   }
 
   function resetCounter() {
